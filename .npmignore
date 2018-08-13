@@ -1,0 +1,10 @@
+.gitignore
+.nyc_output
+.edotorcongif
+.eslintignore
+.eslintrc.js
+node_modules/
+test/
+.idea
+.nyc_output/
+coverage/
