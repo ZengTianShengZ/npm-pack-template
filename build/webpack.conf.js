@@ -1,31 +1,29 @@
-'use strict'
-const path = require('path')
-const packageConfig = require('../package.json')
-const webpack = require('webpack')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+'use strict';
 
-function resolve (dir) {
-  return path.join(__dirname, '../', dir)
+const path = require('path');
+const packageConfig = require('../package.json');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+function resolve(dir) {
+  return path.join(__dirname, '../', dir);
 }
-console.log('====pack version====xxx=');
-console.log(packageConfig.version)
-console.log(resolve('src'));
-
+console.log('====pack version=====');
+console.log(packageConfig.version);
 console.log('====pack version=====');
 
 module.exports = {
   context: resolve('src'),
   entry: {
-    'index': './index.js'
+    index: './index.js'
   },
   output: {
-    library: "index",
-    libraryTarget: "umd",
+    library: 'index',
+    libraryTarget: 'umd',
     path: resolve('dist'),
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js'], //**Change
+    extensions: ['.js'], //* *Change
     modules: [
       'node_modules'
     ]
@@ -50,4 +48,4 @@ module.exports = {
       parallel: true
     })
   ]
-}
+};

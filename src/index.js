@@ -1,10 +1,10 @@
 
-class PackTest{
+class PackTest {
   test() {
-    return {name: 'pack'}
+    return { name: 'pack' };
   }
   testBoolean() {
-    return true
+    return true;
   }
 }
 module.exports = new PackTest();
