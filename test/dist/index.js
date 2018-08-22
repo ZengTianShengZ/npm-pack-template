@@ -1,6 +1,6 @@
 'use strict'
 const test = require('ava')
-const pack = require('../../src/index.js')
+const pack = require('../../dis/index.js')
 
 
 test('测试1', t => {

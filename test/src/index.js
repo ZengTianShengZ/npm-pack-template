@@ -1,3 +1,8 @@
+/**
+ * ava 做模块测试
+ * 详细文档 https://github.com/avajs/ava-docs/blob/master/zh_CN/readme.md
+ */
+
 'use strict';
 
 const test = require('ava');

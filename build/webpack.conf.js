@@ -7,9 +7,11 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 function resolve(dir) {
   return path.join(__dirname, '../', dir);
 }
-console.log('====pack version=====');
-console.log(packageConfig.version);
-console.log('====pack version=====');
+console.log(`
+====pack version=====
+      ${packageConfig.version}
+====pack version=====
+`);
 
 module.exports = {
   context: resolve('src'),
